@@ -1,6 +1,6 @@
 ---
 - name: update files
-  hosts: master_node
+  hosts: vm
   become: yes
 
   tasks: 
