@@ -1,6 +1,6 @@
 ---
 - name: update files
-  hosts: master
+  hosts: all
   become: yes
 
   tasks:
