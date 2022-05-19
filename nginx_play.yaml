@@ -4,13 +4,13 @@
   become: yes
 
   tasks:
-    - name: copy file
-      copy:
-        src: ./
-        dest: ~/jenkins/
+    #    - name: copy file
+    #      copy:
+    #        src: ./
+    #        dest: ~/jenkins/
     
     - name: docker build
-      shell: docker build -t dltoa6746/PersonalProject:1.0 ~/jenkins/
+      shell: docker build -t dltoa6746/PersonalProject:1.0 .
 
     - name: docker push
       shell: docker push dltoa6746/PersonalProject:1.0
