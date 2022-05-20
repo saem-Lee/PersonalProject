@@ -15,10 +15,10 @@
         dest: ~/jenkins
     
     - name: docker build
-      shell: docker build -t dltoa6746/personalproject:blue ~/jenkins
+      shell: docker build -t dltoa6746/personalproject:2.0 ~/jenkins
 
     - name: docker push
-      shell: docker push dltoa6746/personalproject:blue
+      shell: docker push dltoa6746/personalproject:2.0
 
     - name: kubernetes create
       shell: kubectl apply -f ~/jenkins/nginx.yaml

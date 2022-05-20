@@ -16,6 +16,6 @@ spec:
     spec:               #<-- 컨테이너에 대한 내용
       containers:
       - name: nginx-ctn
-        image: dltoa6746/personalproject:blue
+        image: dltoa6746/personalproject:2.0
         ports:
         - containerPort: 80
