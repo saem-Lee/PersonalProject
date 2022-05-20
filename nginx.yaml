@@ -19,3 +19,5 @@ spec:
         image: dltoa6746/personalproject:2.0
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
