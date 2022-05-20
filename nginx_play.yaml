@@ -4,10 +4,10 @@
   become: yes
 
   tasks:
-    #    - name: copy file
-    #      copy:
-    #        src: ./
-    #        dest: ~/jenkins/
+    - name: copy file
+      copy:
+        src: ./
+        dest: ~/
     
     - name: docker build
       shell: docker build -t dltoa6746/PersonalProject:1.0 .
@@ -16,4 +16,4 @@
       shell: docker push dltoa6746/PersonalProject:1.0
 
     - name: kubernetes create
-      shell: kubectl apply -f ~/jenkins/nginx.yaml
+      shell: kubectl apply -f ~/nginx.yaml
